@@ -1,0 +1,23 @@
+@import './utils/normalize';
+@import './fonts/open-sans.scss';
+
+@import './utils/vars';
+
+html {
+  font-family: $font-family-main;
+  font-size: $font-size-main;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr 50px;
+
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
