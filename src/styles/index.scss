@@ -17,12 +17,12 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 50px;
 
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container {
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
