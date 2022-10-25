@@ -9,13 +9,9 @@ $color-dark: #000158;
 $color-header-bg: linear-gradient(var(--color-normal), var(--color-light));
 $color-footer-bg: linear-gradient(var(--color-normal), var(--color-dark));
 
-$header-logo-left: #6cfff8;
-$header-logo-right: #ff9797;
-
 $color-shadow: rgba(255, 255, 255, 0.5);
 
-$transition-behavior: 0.2s linear;
-
 $font-family-main: 'Open Sans', sans-serif;
-
 $font-size-main: 18px;
+
+$transition-behavior: 0.2s linear;
