@@ -1,0 +1,12 @@
+@import '../../../styles/utils/mixins';
+
+.nav {
+  display: flex;
+  gap: 40px;
+
+  height: 100%;
+
+  @include tablet {
+    gap: 25px;
+  }
+}

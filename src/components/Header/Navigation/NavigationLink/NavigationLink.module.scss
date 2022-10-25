@@ -1,0 +1,39 @@
+@import '../../../../styles/utils/vars';
+@import '../../../../styles/utils/mixins';
+
+.link {
+  position: relative;
+
+  padding: 15px 0;
+
+  text-transform: uppercase;
+  color: $color-secondary;
+  text-decoration: none;
+
+  transition: color $transition-behavior;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    display: block;
+    width: 0;
+    height: 2px;
+  
+    background: $color-secondary;
+    
+    transition: all $transition-behavior;
+  }
+  
+  &:hover:after {
+    width: 100%;
+    background: $color-blue;
+  }
+}

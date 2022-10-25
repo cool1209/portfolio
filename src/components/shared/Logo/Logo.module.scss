@@ -1,0 +1,38 @@
+@import '../../../styles/utils/vars';
+
+.logo {
+  display: flex;
+  font-family: $font-family-logo;
+  font-size: 44px;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-shadow: $shadow-dark;
+
+  cursor: pointer;
+
+  &__leftPart,
+  &__rightPart {
+    transition: color $transition-behavior;
+  }
+
+  &__leftPart {
+    color: $color-logo-leftPart;
+  }
+
+  &__rightPart {
+    color: $color-logo-rightPart;
+  }
+
+  &:hover &__leftPart {
+    color: $color-logo-rightPart;
+  
+  }
+
+  &:hover &__rightPart {
+    color: $color-logo-leftPart;
+  }
+}
+
+
+

@@ -3,15 +3,28 @@ $color-secondary: #fff;
 $color-darck: #000;
 
 $color-light: #4575dd;
-$color-normal: #001ea3;
-$color-dark: #000158;
+$color-normal: #283c94;
+$color-dark: #111249;
 
-$color-header-bg: linear-gradient(var(--color-normal), var(--color-light));
-$color-footer-bg: linear-gradient(var(--color-normal), var(--color-dark));
+$color-blue: #66ffff;
+$color-yellow: #fbff00;
 
-$color-shadow: rgba(255, 255, 255, 0.5);
+$color-header-bg: linear-gradient($color-normal, $color-light);
+$color-footer-bg: linear-gradient($color-normal, $color-dark);
+
+$color-logo-leftPart: $color-blue;
+$color-logo-rightPart: $color-yellow;
+
+$shadow-dark: 1px 1px 5px #000;
+$shadow-light: 1px 1px 5px #fff;
 
 $font-family-main: 'Open Sans', sans-serif;
-$font-size-main: 18px;
+$font-family-logo: 'Fredericka the Great', cursive;
 
-$transition-behavior: 0.2s linear;
+$font-size-main: 18px;
+$font-size-large: 22px;
+$font-size-small: 16px;
+$font-size-mini: 14px;
+
+$transition-behavior: 0.1s linear;
+  
