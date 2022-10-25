@@ -1,3 +1,33 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .footer {
-  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px 0;
+
+  color: $color-secondary;
+
+  background: $color-footer-bg;
+
+  &__copyText,
+  &__copyAuthor {
+    font-size: $font-size-mini;
+  }
+
+  &__copyAuthor {
+    position: relative;
+    display: block;
+
+    font-family: $font-family-signature;
+    color: $color-secondary;
+    text-decoration: none;
+
+    transition: color $transition-behavior;
+
+    @include hoverLinkDecoration(-5px);
+  }
 }

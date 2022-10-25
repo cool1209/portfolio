@@ -20,4 +20,31 @@
   @media (max-width: 480px) {
     @content
   }
+};
+
+@mixin hoverLinkDecoration($bottom) {
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: $bottom;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    display: block;
+    width: 0;
+    height: 2px;
+  
+    background: $color-secondary;
+    
+    transition: all $transition-behavior;
+  }
+  
+  &:hover:after {
+    width: 100%;
+    background: $color-blue;
+  }
 }

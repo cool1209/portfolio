@@ -10,7 +10,7 @@ $color-blue: #66ffff;
 $color-yellow: #fbff00;
 
 $color-header-bg: linear-gradient($color-normal, $color-light);
-$color-footer-bg: linear-gradient($color-normal, $color-dark);
+$color-footer-bg: linear-gradient($color-light, $color-dark);
 
 $color-logo-leftPart: $color-blue;
 $color-logo-rightPart: $color-yellow;
@@ -20,6 +20,7 @@ $shadow-light: 1px 1px 5px #fff;
 
 $font-family-main: 'Open Sans', sans-serif;
 $font-family-logo: 'Fredericka the Great', cursive;
+$font-family-signature: 'Pacifico', cursive;
 
 $font-size-main: 18px;
 $font-size-large: 22px;
