@@ -8,6 +8,8 @@
 html {
   font-family: $font-family-main;
   font-size: $font-size-main;
+
+  scroll-behavior: smooth;
 }
 
 .app {
@@ -20,6 +22,7 @@ html {
 
 .container {
   max-width: 1400px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }

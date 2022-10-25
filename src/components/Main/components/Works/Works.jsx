@@ -3,7 +3,7 @@ import styles from './Works.module.scss';
 
 const Works = () => {
   return (
-    <section className={styles.works}>
+    <section className={styles.works} id='works'>
       <h1>Works</h1>
     </section>
   );
