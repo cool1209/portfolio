@@ -13,10 +13,20 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 .app {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 50px;
+  grid-template-rows: 1fr auto;
 
   height: 100vh;
 }

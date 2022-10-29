@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import LogoStyles from './Logo.module.scss';
 
 const Logo = ({ styles = null }) => {
   return (
-    <a href='#home' className={`${LogoStyles.logo} ${styles}`}>
+    <NavLink to='/' className={`${LogoStyles.logo} ${styles}`}>
       <span className={LogoStyles.logo__leftPart}>Ihor</span>
-      <span className={LogoStyles.logo__rightPart}>Kuchin</span>
-    </a>
+      <span className={LogoStyles.logo__rightPart}>Kuchin</span>   
+    </NavLink>
   );
 };
 

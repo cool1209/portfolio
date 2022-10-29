@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Contacts from './components/Contacts/Contacts';
 import Home from './components/Home/Home';
@@ -8,10 +9,13 @@ import styles from './Main.module.scss';
 const Main = () => {
   return (
     <main className={styles.main}>
-      <Home />
-      <Works />
-      <About />
-      <Contacts />
+      <Routes>
+        <Route path='/' element={<Navigate to='/home' />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path='/works' element={<Works />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/contacts' element={<Contacts />}/>
+      </Routes>
     </main>
   );
 };

@@ -5,12 +5,13 @@
   
   &__blure {
     height: 100%;
-    background-color: rgba(2, 13, 31, 0.95);
+    background-color: rgba(2, 13, 31, 0.9);
   }
 
   &__inner {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     max-width: 750px;
@@ -18,20 +19,23 @@
     height: 100%;
     margin: 0 auto;
 
-    text-shadow: $shadow-dark;
     color: $color-secondary;
   }
 
   &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    margin-bottom: 30px;
     font-size: 60px;
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin-bottom: 30px;
+
     font-size: $font-size-large;
     line-height: 1.4;
+    text-shadow: $shadow-dark;
   }
 }

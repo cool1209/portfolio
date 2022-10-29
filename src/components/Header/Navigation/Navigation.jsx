@@ -1,19 +1,32 @@
 import React from 'react';
+import CustomNavLink from '../../shared/CustomNavLink/CustomNavLink';
 import styles from './Navigation.module.scss';
-import NavigationLink from './NavigationLink/NavigationLink';
 
 const Navigation = () => {
   const links = [
-    'home',
-    'works',
-    'about',
-    'contacts'
+    {
+      name: 'home',
+      path: '/home'
+    },    {
+      name: 'works',
+      path: '/works'
+    },    {
+      name: 'about',
+      path: '/about'
+    },    {
+      name: 'contacts',
+      path: '/contacts'
+    }
   ];
 
   return (
     <nav className={styles.nav}>
       {links.map(link => (
-        <NavigationLink link={link} key={link} />
+        <CustomNavLink
+          path={link.path}
+          name={link.name}
+          key={link.name}
+        />
       ))}
     </nav>
   );
