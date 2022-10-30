@@ -1,6 +1,6 @@
 import React from 'react';
 import x from './img/x.png';
-import IconStyles from './styles.module.scss';
+import IconStyles from './Icon.module.scss';
 
 const Icon = ({
   id,
@@ -12,7 +12,7 @@ const Icon = ({
     case 'x':
 
     return (
-      <img src={x} alt={alt} className={`${IconStyles.xicon} ${styles}`} />
+      <img src={x} alt={alt} className={`${IconStyles.icon} ${styles}`} />
     );
 
     default:

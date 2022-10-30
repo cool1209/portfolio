@@ -1,7 +1,16 @@
 .works {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   
-  background: cyan;
+    width: 100%;
+    padding: 20px 0;
+  }
 }
+

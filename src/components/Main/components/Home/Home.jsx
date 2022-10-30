@@ -5,7 +5,7 @@ import styles from './Home.module.scss';
 
 const Home = () => {
   return (
-    <section className={styles.home} id='home'>
+    <section className={styles.home}>
       <div className={styles.home__blure}>
         <div className='container'>
           <div className={styles.home__inner}>

@@ -1,11 +1,12 @@
 @import '../../../../styles/utils/vars';
 
 .home {
-  background: url('../../../../assets/img/home.jpg') center / cover no-repeat;
+  background: url('../../../../assets/img/pages/home.jpg') center / cover no-repeat;
   
   &__blure {
     height: 100%;
-    background-color: rgba(2, 13, 31, 0.9);
+    background-color: rgba(2, 13, 31, 0.95);
+    padding: 70px 0;
   }
 
   &__inner {
