@@ -1,6 +1,10 @@
 @import '../../../styles/utils/vars';
+@import '../../../styles/utils/mixins';
 
 .logo {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   font-family: $font-family-logo;
   font-size: 44px;
@@ -10,6 +14,14 @@
   text-shadow: $shadow-dark;
 
   cursor: pointer;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include phone {
+    font-size: 30px;
+  }
 
   &__leftPart,
   &__rightPart {

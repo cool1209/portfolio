@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from '../../../../assets/img/Img';
-import works from '../../../../database/works';
+import works from '../../../../data/works';
 import Work from './Work/Work';
 import styles from './Works.module.scss';
 

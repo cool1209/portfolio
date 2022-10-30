@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './CustomNavLink.module.scss';
+import { NavContext } from '../../../context/NavContext';
+import linkStyles from './CustomNavLink.module.scss';
 
-const CustomNavLink = ({ name, path }) => {
+const CustomNavLink = ({ name, path, styles }) => {
+  const { setIsActive } = useContext(NavContext);
+
   return (
     <NavLink
-      to={path} 
+      to={path}
       className={({ isActive }) => (
-        isActive 
-        ? `${styles.link} ${styles.link_active}`
-        : styles.link
+        isActive
+        ? `${linkStyles.link} ${styles} ${linkStyles.link_active}`
+        : `${linkStyles.link} ${styles}`
       )}
+      onClick={setIsActive}
     >
       {name}
     </NavLink>

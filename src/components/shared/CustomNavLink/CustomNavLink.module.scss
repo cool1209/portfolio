@@ -2,8 +2,6 @@
 @import '../../../styles/utils/mixins';
 
 .link {
-  position: relative;
-
   padding: 15px 0;
 
   text-transform: uppercase;
@@ -11,6 +9,10 @@
   text-decoration: none;
 
   transition: color $transition-behavior;
+
+  @include phone {
+    padding: 10px 0;
+  }
 
   &_active,
   &:hover {
@@ -36,5 +38,10 @@
   &:hover:after {
     width: 100%;
     background: $color-blue;
+
+    @include smallTablet {
+      width: 0;
+      background: none;
+    }
   }
 }

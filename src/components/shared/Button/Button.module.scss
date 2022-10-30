@@ -1,9 +1,11 @@
 @import '../../../styles/utils/vars';
+@import '../../../styles/utils/mixins';
 
 .button {
-  margin-top: 25px;
-  width: 280px;
+  display: block;
+  width: 300px;
   height: 60px;
+  padding: 0;
 
   font-size: $font-size-large;
   text-transform: uppercase;
@@ -14,6 +16,14 @@
 
   cursor: pointer;
   transition: all $transition-behavior;
+
+  @include tablet {
+    font-size: $font-size-main;
+  }
+
+  @include phone {
+    width: 100%;
+  }
 
   &:focus,
   &:hover {

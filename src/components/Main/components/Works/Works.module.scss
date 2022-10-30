@@ -1,3 +1,5 @@
+@import '../../../../styles/utils/vars';
+
 .works {
 
   &__inner {
@@ -10,7 +12,7 @@
     flex-wrap: wrap;
   
     width: 100%;
-    padding: 20px 0;
+    padding: $page-padding-top-main 0 20px;
   }
 }
 

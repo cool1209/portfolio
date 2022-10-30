@@ -6,9 +6,9 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <section className={styles.home}>
-      <div className={styles.home__blure}>
-        <div className='container'>
-          <div className={styles.home__inner}>
+      <div className='container'>
+        <div className={styles.home__inner}>
+          <div className={styles.home__content}>
             <h1 className={styles.home__title}>
               Hello there!
             </h1>
@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             <NavLink to='/works'>
-              <Button name='Portfolio' />
+              <Button name='Portfolio' styles={styles.home__button} />
             </NavLink>
           </div>
         </div>

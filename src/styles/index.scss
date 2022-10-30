@@ -48,7 +48,12 @@ a {
   display: grid;
   grid-template-rows: 1fr auto;
 
+  min-width: 300px;
   height: 100vh;
+
+  &_noScroll {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -57,4 +62,8 @@ a {
   height: 100%;
   margin: 0 auto;
   padding: 0 30px;
+
+  @include phone {
+    padding: 0 15px;
+  }
 }
