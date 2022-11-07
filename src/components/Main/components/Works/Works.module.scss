@@ -9,7 +9,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px;
   
     width: 100%;
     padding: $page-padding-top-main 0 40px;
@@ -19,6 +19,7 @@
     };
 
     @include phone {
+      gap: 20px;
       padding: $page-padding-top-phone 0 20px;
     };
   }

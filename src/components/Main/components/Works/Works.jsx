@@ -9,11 +9,13 @@ const Works = () => {
     <section className={styles.works}>
       <Img id='works' />
       <div className='container'>
-        <div className={styles.works__inner}>
+        <ul className={styles.works__inner}>
           {works.map(work => (
-            <Work work={work} key={work.name} />
+            <li key={work.name}>
+              <Work work={work} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
