@@ -2,7 +2,7 @@ const works = [
   {
     name: 'Keep in touch',
     technologies: 'React, Redux, JS, HTML, CSS',
-    description: 'A social network simulator. The pet project for better understanding how to work with frameworks like React and Redux. Flux architecture, data interaction, etc.',
+    description: 'A social network simulator. The project for better understanding React and Redux libraries, Flux architecture, data interaction, etc.',
     demoViev: 'https://ik-web.github.io/keep-in-touch/',
     codeView: 'https://github.com/ik-web/keep-in-touch',
   },

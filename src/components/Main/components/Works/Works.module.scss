@@ -1,4 +1,5 @@
 @import '../../../../styles/utils/vars';
+@import '../../../../styles/utils/mixins';
 
 .works {
 
@@ -6,13 +7,20 @@
     position: relative;
     z-index: 1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   
     width: 100%;
-    padding: $page-padding-top-main 0 20px;
+    padding: $page-padding-top-main 0 40px;
+
+    @include smallTablet {
+      grid-template-columns: 1fr;
+    };
+
+    @include phone {
+      padding: $page-padding-top-phone 0 20px;
+    };
   }
 }
 
