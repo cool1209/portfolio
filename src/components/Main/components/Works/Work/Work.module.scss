@@ -4,7 +4,9 @@
 .work {
   position: relative;
 
-  border: 2px solid $color-grey;
+  &:hover {
+    box-shadow: 0 0 8px 4px $color-blue;
+  }
   
   &__description {
     position: absolute;

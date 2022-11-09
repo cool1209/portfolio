@@ -5,8 +5,10 @@
   padding: 15px 0;
 
   text-transform: uppercase;
-  color: $color-secondary;
   text-decoration: none;
+  color: $color-secondary;
+
+  outline: none;
 
   transition: color $transition-behavior;
 
@@ -14,30 +16,14 @@
     padding: 10px 0;
   }
 
-  &_active,
-  &:hover {
+  &_active {
     color: $color-blue;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+  @include hoverLinkDecoration(20%);
   
-    display: block;
-    width: 0;
-    height: 2px;
-  
-    background: $color-secondary;
-    
-    transition: all $transition-behavior;
-  }
-  
-  &:hover:after {
-    width: 100%;
-    background: $color-blue;
+  &:hover:after,
+  &:focus:after {
 
     @include smallTablet {
       width: 0;

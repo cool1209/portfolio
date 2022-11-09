@@ -5,10 +5,13 @@ $color-black: #000;
 $color-light: #234aa0;
 $color-normal: #122061;
 $color-dark: #0b123a;
+$color-transparent-page-home: rgba(0, 10, 36, 0.9);
+$color-transparent-page-works: rgba(0, 0, 0, 0.75);
+$color-transparent-page-about: rgba(1, 18, 61, 0.9);
 
 $color-blue: #66ffff;
 $color-yellow: #fbff00;
-$color-grey: #7e7e7e;
+$color-grey: #ebebeb;
 
 $color-header-bg: linear-gradient($color-normal, $color-light);
 $color-footer-bg: linear-gradient($color-light, $color-dark);

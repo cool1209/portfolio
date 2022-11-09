@@ -1,18 +1,18 @@
-const educations = [
+const education = [
   {
     id: 1,
     organization: "Kottans frontend",
-    education: "Git, HTML, CSS, JavaScript, Typescript, reactive frameworks, Web"
+    education: "Git, HTML, CSS, JS, Typescript, React, Web"
   },
   {
     id: 2,
     organization: "Mate academy",
-    education: "Git, HTML, CSS, JavaScript, Typescript, React, Web"
+    education: "Git, HTML, CSS, JS, Typescript, React, Redux, Web"
   },
   {
     id: 3,
     organization: "FreeCodeCamp",
-    education: "HTML, CSS, JavaScript"
+    education: "HTML, CSS, JS"
   },
   {
     id: 4,
@@ -22,12 +22,12 @@ const educations = [
   {
     id: 51,
     organization: "Reactjs.org",
-    education: "React.js"
+    education: "React"
   },
   {
     id: 6,
     organization: "Books",
-    education: "You Don't Know JS - Kyle Simpson, Clean code"
+    education: "You Don't Know JS, Clean code"
   },
   {
     id: 7,
@@ -36,4 +36,4 @@ const educations = [
   }
 ];
 
-export default educations;
+export default education;

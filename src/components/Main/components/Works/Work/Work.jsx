@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../../../../../assets/img/Img';
+import WorkImage from '../../../../../assets/img/WorkImage';
 import styles from './Work.module.scss';
 
 const Work = ({ work }) => {
@@ -45,7 +45,7 @@ const Work = ({ work }) => {
           <i className={`${styles.work__githubIcon} icon-github`}></i>
         </a>
 
-        <Img  id={work.name} alt={work.name} />
+        <WorkImage  id={work.name} />
       </div>
     </div>
   );

@@ -26,6 +26,8 @@
     color: $color-secondary;
     text-decoration: none;
 
+    outline: none;
+
     transition: color $transition-behavior;
 
     @include hoverLinkDecoration(-5px);

@@ -1,0 +1,28 @@
+@import '../../../../../../styles/utils/vars';
+
+.educationItem {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  line-height: 1.25;
+  
+  border-bottom: 1px dashed $color-blue;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+
+  &__organization {
+    color: $color-yellow;
+  }
+
+  &__education {
+    margin-top: 10px;
+
+    font-size: $font-size-small;
+    font-style: italic;
+    color: $color-secondary;
+  }
+}

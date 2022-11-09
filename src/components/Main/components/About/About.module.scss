@@ -1,7 +1,62 @@
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import '../../../../styles/utils/vars';
+@import '../../../../styles/utils/mixins';
 
-  background: orange;
+.about {
+  height: 100%;
+  padding: $page-padding-top-main 0 40px;
+
+  @include phone {
+    padding: $page-padding-top-phone 0 20px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+
+    height: 100%;
+
+    color: $color-grey;;
+    text-shadow: $shadow-dark;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include phone {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__col {
+    flex-basis: 50%;
+
+    height: 100%;
+    padding: 16px;
+    background: $color-transparent-page-about;
+
+    @include smallTablet {
+      flex-basis: 100%;
+    }
+  }
+
+  &__colItem {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-size: $font-size-large;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: $color-blue;
+
+    @include phone {
+      font-size: $font-size-main;
+    }
+  }
 }

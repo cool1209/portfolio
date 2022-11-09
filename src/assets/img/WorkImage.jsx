@@ -1,35 +1,24 @@
 import React from 'react';
 import ImgStyles from './Img.module.scss';
-import works from './pages/works.jpg';
 import KeepInTouch from './works/kit.png';
 import friendsApp from './works/friends_app.png';
 import memoryPairGame from './works/memory_game.png';
 import creativeBackery from './works/creative_bakery.png';
 import myBike from './works/mybike.png';
 import activeBox from './works/activebox.png';
+import frogger from './works/frogger.png';
+import jsDOM from './works/js_dom.png';
+import affiliate from './works/affiliate.png';
 
-const Img = ({
-  id,
-  alt,
-}) => {
+const WorkImage = ({ id }) => {
 
   switch(id) {
-    case 'works':
-  
-      return (
-        <img
-          src={works}
-          alt={alt}
-          className={ImgStyles.works}
-        />
-      );
-
     case 'Keep in touch':
 
     return (
       <img
         src={KeepInTouch}
-        alt={alt}
+        alt={id}
         className={ImgStyles.work}
       />
     );
@@ -39,7 +28,7 @@ const Img = ({
       return (
         <img
           src={friendsApp}
-          alt={alt}
+          alt={id}
           className={ImgStyles.work}
         />
       );
@@ -49,7 +38,17 @@ const Img = ({
       return (
         <img
           src={memoryPairGame}
-          alt={alt}
+          alt={id}
+          className={ImgStyles.work}
+        />
+      );
+
+    case 'Affiliate':
+
+      return (
+        <img
+          src={affiliate}
+          alt={id}
           className={ImgStyles.work}
         />
       );
@@ -59,7 +58,7 @@ const Img = ({
       return (
         <img
           src={creativeBackery}
-          alt={alt}
+          alt={id}
           className={ImgStyles.work}
         />
       );
@@ -69,7 +68,7 @@ const Img = ({
       return (
         <img
           src={myBike}
-          alt={alt}
+          alt={id}
           className={ImgStyles.work}
         />
       );
@@ -79,7 +78,27 @@ const Img = ({
       return (
         <img
           src={activeBox}
-          alt={alt}
+          alt={id}
+          className={ImgStyles.work}
+        />
+      );
+
+    case 'Frogger':
+
+      return (
+        <img
+          src={frogger}
+          alt={id}
+          className={ImgStyles.work}
+        />
+      );
+
+    case 'JS DOM':
+
+      return (
+        <img
+          src={jsDOM}
+          alt={id}
           className={ImgStyles.work}
         />
       );
@@ -89,4 +108,4 @@ const Img = ({
   }
 };
 
-export default Img;
+export default WorkImage;

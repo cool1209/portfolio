@@ -13,7 +13,7 @@ const skills = [
   },
   {
     id: 4,
-    info: "Bulma, Bootstrap, TailwindCSS"
+    info: "TailwindCSS, Bootstrap, Bulma"
   },
   {
     id: 5,

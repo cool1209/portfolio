@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PageBackground from '../../../../assets/img/PageBackground';
 import Button from '../../../shared/Button/Button';
 import styles from './Home.module.scss';
 
 const Home = () => {
   return (
     <section className={styles.home}>
+      <PageBackground id='home' />
       <div className='container'>
         <div className={styles.home__inner}>
           <div className={styles.home__content}>
@@ -23,7 +25,7 @@ const Home = () => {
               </p>
             </div>
 
-            <NavLink to='/works'>
+            <NavLink to='/works' tabIndex={-1}>
               <Button name='Portfolio' styles={styles.home__button} />
             </NavLink>
           </div>

@@ -17,6 +17,7 @@
 };
 
 @mixin hoverLinkDecoration($bottom) {
+  &:focus,
   &:hover {
     color: $color-blue;
   }
@@ -37,7 +38,8 @@
     transition: all $transition-behavior;
   }
   
-  &:hover:after {
+  &:hover:after,
+  &:focus:after {
     width: 100%;
     background: $color-blue;
   }

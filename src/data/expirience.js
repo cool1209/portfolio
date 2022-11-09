@@ -7,7 +7,7 @@ const expirience = [
     responsibilities: [
       "Development of interfaces for web applications"
     ],
-    Technologies: "HTML, CSS, JavaScript, Typescript, React, Redux, Next.js, WebSocket"
+    technologies: "HTML, CSS, JavaScript, Typescript, React, Redux, Next.js, WebSocket"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const expirience = [
     responsibilities: [
       "Layout of websites, landing pages etc"
     ],
-    Technologies: "Git, HTML, CSS, JS, JQuery, Bootstrap, Bulma"
+    technologies: "Git, HTML, CSS, JS, JQuery, Bootstrap, Bulma"
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const expirience = [
       "Group training of children and adults in the martial art of capoeira",
       "Individual training of adults in the martial art of capoeira"
     ],
-    Technologies: null
+    technologies: null
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const expirience = [
       "Promotion",
       "Work with clients"
     ],
-    Technologies: "HTML, CSS, JS, Facebook Ads, Google Ads"
+    technologies: "HTML, CSS, JS, Facebook Ads, Google Ads"
   },
 ];
 
