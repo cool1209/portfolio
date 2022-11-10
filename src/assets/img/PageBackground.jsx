@@ -1,8 +1,8 @@
 import React from 'react';
 import ImgStyles from './Img.module.scss';
-import home from './pages/home.jpg';
-import works from './pages/works.jpg';
-import about from './pages/about.jpg';
+import home from './pages/home.webp';
+import works from './pages/works.webp';
+import about from './pages/about.webp';
 
 const PageBackground = ({ id }) => {
 
