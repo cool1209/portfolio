@@ -7,13 +7,6 @@ const works = [
     codeView: "https://github.com/ik-web/keep-in-touch",
   },
   {
-    name: "Memory pair game",
-    technologies: "HTML, CSS, JS",
-    description: "It is a small card game for memory exsercize",
-    demoViev: "https://ik-web.github.io/memory-pair-game/",
-    codeView: "https://github.com/ik-web/memory-pair-game",
-  },
-  {
     name: "Affiliate",
     technologies: "HTML, JS, TailwindCSS",
     description: "Practical work to improve page layout skills using TailwindCSS framework",
@@ -26,6 +19,13 @@ const works = [
     description: "This is a tiny social media with user cards and filters. Used the random user API",
     demoViev: "https://ik-web.github.io/friends-app/",
     codeView: "https://github.com/ik-web/friends-app",
+  },
+  {
+    name: "Memory pair game",
+    technologies: "HTML, CSS, JS",
+    description: "It is a small card game for memory exsercize",
+    demoViev: "https://ik-web.github.io/memory-pair-game/",
+    codeView: "https://github.com/ik-web/memory-pair-game",
   },
   {
     name: "CreativeBakery",
@@ -42,13 +42,6 @@ const works = [
     codeView: "https://github.com/ik-web/layout-page-my-bike",
   },
   {
-    name: "ActiveBox",
-    technologies: "HTML, CSS, JS, JQuery",
-    description: "Practical work to improve page layout skills",
-    demoViev: "https://ik-web.github.io/active-box/",
-    codeView: "https://github.com/ik-web/active-box",
-  },
-  {
     name: "Frogger",
     technologies: "HTML, CSS, JS",
     description: "The mini browser game is written in a third-party engine",
@@ -56,11 +49,11 @@ const works = [
     codeView: "https://github.com/ik-web/game-frogger",
   },
   {
-    name: "JS DOM",
-    technologies: "HTML, CSS, JS",
-    description: "The parth of page with a menu. Navigation through the menu buttons without reloading the page",
-    demoViev: "https://ik-web.github.io/js-dom/",
-    codeView: "https://github.com/ik-web/js-dom",
+    name: "ActiveBox",
+    technologies: "HTML, CSS, JS, JQuery",
+    description: "Practical work to improve page layout skills",
+    demoViev: "https://ik-web.github.io/active-box/",
+    codeView: "https://github.com/ik-web/active-box",
   }
 ];
 

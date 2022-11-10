@@ -4,7 +4,7 @@ import styles from './SkillsItem.module.scss';
 const SkillsItem = ({ skillsItem }) => {
   return (
     <li className={styles.skillsItem}>
-      {skillsItem.info}
+      {skillsItem}
     </li>
   );
 };

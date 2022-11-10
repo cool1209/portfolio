@@ -3,6 +3,7 @@ import ImgStyles from './Img.module.scss';
 import home from './pages/home.webp';
 import works from './pages/works.webp';
 import about from './pages/about.webp';
+import contacts from './pages/contacts.webp';
 
 const PageBackground = ({ id }) => {
 
@@ -32,6 +33,16 @@ const PageBackground = ({ id }) => {
       return (
         <img
           src={about}
+          alt={id}
+          className={ImgStyles.page}
+        />
+      );
+
+    case 'contacts':
+
+      return (
+        <img
+          src={contacts}
           alt={id}
           className={ImgStyles.page}
         />

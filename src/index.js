@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 import App from './App';
 import { HashRouter } from 'react-router-dom';
-import { NavProvider } from './context/NavContext';
+import { AppProvider } from './context/AppContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <NavProvider>
+      <AppProvider>
         <App />
-      </NavProvider>
+      </AppProvider>
     </HashRouter>
   </React.StrictMode>
 );

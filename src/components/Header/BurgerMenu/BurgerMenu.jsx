@@ -1,18 +1,24 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import styles from './BurgerMenu.module.scss';
-import { NavContext } from '../../../context/NavContext';
+import { useAppContext } from '../../../hooks/useAppContext';
+
 
 const BurgerMenu = () => {
-  const { isActive, setIsActive } = useContext(NavContext);
+  const { isActiveMenu, setIsActiveMenu } = useAppContext();
+  
+  const toggleActiveMenu = () => {
+    setIsActiveMenu();
+    document.body.classList.toggle('noScroll');
+  }
 
   return (
     <div className={styles.burger}>
       <button
-        onClick={setIsActive}
+        onClick={toggleActiveMenu}
         className={classNames(
           `${styles.burgerButton}`,
-          {[styles.burgerButton_active]: isActive}
+          {[styles.burgerButton_active]: isActiveMenu}
         )}
       >
         <div className={styles.burgerButton__item}></div>

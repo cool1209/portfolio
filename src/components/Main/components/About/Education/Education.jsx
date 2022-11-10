@@ -1,16 +1,17 @@
 import React from 'react';
-import styles from './Education.module.scss';
-import education from '../../../../../data/education';
+import { useAppContext } from '../../../../../hooks/useAppContext';
 import EducationItem from './EducationItem/EducationItem';
 
 
 const Education = () => {
+  const { education } = useAppContext();
+
   return (
-    <ul className={styles.educationList}>
+    <ul>
       {education.map( educationItem => (
         <EducationItem
           educationItem={educationItem} 
-          key={educationItem.id}
+          key={educationItem.organization}
         />
       ))}
     </ul>

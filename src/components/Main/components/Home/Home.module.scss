@@ -4,13 +4,9 @@
 .home {
   position: relative;
 
-  padding: $page-padding-top-main 0;
+  @include pagePadding;
 
-  background: $color-transparent-page-home;
-
-  @include phone {
-    padding: $page-padding-top-phone 0;
-  }
+  background: $color-page-bg-transparent-blue;
 
   &__inner {
     display: flex;
@@ -18,7 +14,11 @@
     align-items: center;
 
     height: 100%;
-
+    
+    @include phone {
+      margin-top: 15px;
+      padding-bottom: 80px;;
+    }
   }
 
   &__content {
@@ -72,6 +72,11 @@
   }
 
   &__button {
+    width: 300px;
     margin: 0 auto;
+
+    @include phone {
+      width: 100%;
+    }
   }
 }

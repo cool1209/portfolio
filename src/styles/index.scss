@@ -56,10 +56,6 @@ ul {
 
   min-width: 300px;
   min-height: 100vh;
-
-  &_noScroll {
-    overflow: hidden;
-  }
 }
 
 .container {
@@ -72,4 +68,8 @@ ul {
   @include phone {
     padding: 0 15px;
   }
+}
+
+.noScroll {
+  overflow: hidden;
 }

@@ -3,10 +3,12 @@
 
 .about {
   height: 100%;
-  padding: $page-padding-top-main 0 40px;
+  
+  
+  @include pagePadding;
 
   @include phone {
-    padding: $page-padding-top-phone 0 20px;
+    background: $color-page-bg-transparent-blue;
   }
 
   &__inner {
@@ -33,20 +35,37 @@
     flex-basis: 50%;
 
     height: 100%;
-    padding: 16px;
-    background: $color-transparent-page-about;
+    padding: 40px;
+    background: $color-page-bg-transparent-blue;
 
     @include smallTablet {
       flex-basis: 100%;
+    }
+
+    @include phone {
+      padding: 0;
+      background: none;
     }
   }
 
   &__colItem {
     margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include phone {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
     font-size: $font-size-large;
     text-transform: uppercase;
@@ -56,6 +75,7 @@
     color: $color-blue;
 
     @include phone {
+      margin-bottom: 20px;
       font-size: $font-size-main;
     }
   }

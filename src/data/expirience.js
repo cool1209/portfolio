@@ -1,6 +1,5 @@
 const expirience = [
   {
-    id: 1,
     position: "Frontend Developer",
     company: "Self employed",
     date: "Apr 2021 - Present",
@@ -10,7 +9,6 @@ const expirience = [
     technologies: "HTML, CSS, JavaScript, Typescript, React, Redux, Next.js, WebSocket"
   },
   {
-    id: 2,
     position: "HTML / CSS developer",
     company: "Freelance",
     date: "Sep 2021 - present",
@@ -20,7 +18,6 @@ const expirience = [
     technologies: "Git, HTML, CSS, JS, JQuery, Bootstrap, Bulma"
   },
   {
-    id: 3,
     position: "Capoeira teacher",
     company: "Grupo Senzala de Capoeira",
     date: "Sep 2018 - present",
@@ -31,7 +28,6 @@ const expirience = [
     technologies: null
   },
   {
-    id: 4,
     position: "Owner of an online store",
     company: "IK-Shop",
     date: "Sep 2018 - Mar 2020",

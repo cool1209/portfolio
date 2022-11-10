@@ -50,3 +50,11 @@
   height: 3px;
   background: $color-secondary;
 }
+
+@mixin pagePadding {
+  padding: $page-padding-top-main 0 40px;
+
+  @include phone {
+    padding: $page-padding-top-phone 0;
+  }
+}

@@ -1,7 +1,30 @@
+@import '../../../../styles/utils/vars';
+@import '../../../../styles/utils/mixins';
+
 .contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include pagePadding;
+
+  @include phone {
+    background: $color-page-bg-transparent-blue;
+  }
   
-  background: gray;
+  &__inner {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 60px;
+    background: $color-page-bg-transparent-blue;
+
+
+    @include phone {
+      max-width: 300px;
+      padding: 0;
+      background: none;
+    }
+  }
+
+  &__button {
+    margin: 60px auto 0;
+  }
 }
+

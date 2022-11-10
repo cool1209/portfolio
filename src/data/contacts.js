@@ -1,23 +1,28 @@
 const contacts = [
   {
-    name: 'phone',
-    info: '+38 099 300 56 05'
+    name: 'Phone',
+    info: '+38 099 300 56 05',
+    buttonName: 'call me'
   },
   {
-    name: 'mail',
-    info: 'kuchin.ihor@gmail.com'
+    name: 'Mail',
+    info: 'kuchin.ihor@gmail.com',
+    buttonName: 'send mail'
   },
   {
-    name: 'telegram',
-    info: 'https://t.me/ihor_ik'
+    name: 'Telegram',
+    info: 'https://t.me/ihor_ik',
+    buttonName: 'send message'
   },
   {
-    name: 'linkedin',
-    info: 'https://www.linkedin.com/in/ihor-kuchin-6a3736203/'
+    name: 'Linkedin',
+    info: 'https://www.linkedin.com/in/ihor-kuchin',
+    buttonName: 'view profile'
   },
   {
-    name: 'github',
-    info: 'https://github.com/ik-web'
+    name: 'Github',
+    info: 'https://github.com/ik-web',
+    buttonName: 'view profile'
   },
 ];
 

@@ -1,14 +1,15 @@
 import React from 'react';
-import styles from './Expirience.module.scss';
-import expirience from '../../../../../data/expirience';
+import { useAppContext } from '../../../../../hooks/useAppContext';
 import ExpirienceItem from './ExpirienceItem/ExpirienceItem';
 
 const Expirience = () => {
+  const { expirience } = useAppContext();
+
   return (
-    <ul className={styles.experienceList}>
+    <ul>
       {expirience.map( expirienceItem => (
         <ExpirienceItem 
-          key={expirienceItem.id}
+          key={expirienceItem.date}
           expirienceItem={expirienceItem}
         />
       ))}

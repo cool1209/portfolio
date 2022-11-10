@@ -1,10 +1,12 @@
 import React from 'react';
 import PageBackground from '../../../../assets/img/PageBackground';
-import works from '../../../../data/works';
+import { useAppContext } from '../../../../hooks/useAppContext';
 import Work from './Work/Work';
 import styles from './Works.module.scss';
 
 const Works = () => {
+  const { works } = useAppContext();
+
   return (
     <section className={styles.works}>
       <PageBackground id='works' />
