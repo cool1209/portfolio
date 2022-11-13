@@ -1,11 +1,11 @@
 const education = [
   {
     organization: "Mate academy",
-    education: "Git, HTML, CSS, JS, Typescript, React, Redux, Web"
+    education: "Git, HTML, CSS, JS, Typescript, React, Web"
   },
   {
     organization: "Kottans frontend",
-    education: "Git, HTML, CSS, JS, Typescript, React, Web"
+    education: "Git, HTML, CSS, JS, Typescript, reactive frameworks, Web"
   },
   {
     organization: "FreeCodeCamp",
