@@ -20,6 +20,8 @@ export const AppContext = React.createContext({
 export const AppProvider = ({ children }) => {
   const [ isActiveMenu, setIsActiveMenu ] = useState(false);
 
+  if (isActiveMenu) {
+  }
   const contextValue = {
     greeting,
     works,
@@ -30,6 +32,7 @@ export const AppProvider = ({ children }) => {
     isActiveMenu,
     setIsActiveMenu: () => {
       setIsActiveMenu(!isActiveMenu);
+      document.body.classList.toggle('noScroll');
     }
   }
 

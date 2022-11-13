@@ -6,16 +6,11 @@ import { useAppContext } from '../../../hooks/useAppContext';
 
 const BurgerMenu = () => {
   const { isActiveMenu, setIsActiveMenu } = useAppContext();
-  
-  const toggleActiveMenu = () => {
-    setIsActiveMenu();
-    document.body.classList.toggle('noScroll');
-  }
 
   return (
     <div className={styles.burger}>
       <button
-        onClick={toggleActiveMenu}
+        onClick={setIsActiveMenu}
         className={classNames(
           `${styles.burgerButton}`,
           {[styles.burgerButton_active]: isActiveMenu}
