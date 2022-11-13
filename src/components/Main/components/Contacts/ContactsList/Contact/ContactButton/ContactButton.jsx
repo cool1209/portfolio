@@ -14,18 +14,14 @@ const compileLinkPath = (name, link) => {
   }
 }
 
-const ContactButton = ({
-  name,
-  link,
-  style
-}) => {
+const ContactButton = ({ name, link }) => {
   const buttonLink = compileLinkPath(name, link);
   const targetBlank = (name !== 'call me') && (name !== 'send mail');
 
   return (
     <a
       href={buttonLink}
-      className={`${styles.button} ${style}$`}
+      className={styles.button}
       target={targetBlank ? `_blank` : ``}
     >
       <span className={styles.button__name}>

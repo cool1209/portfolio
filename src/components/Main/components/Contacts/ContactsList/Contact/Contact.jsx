@@ -15,7 +15,6 @@ const Contact = ({ contact }) => {
       <ContactButton
         name={contact.buttonName}
         link={contact.info}
-        style={styles.contact__button}
       />
     </li>
   );
