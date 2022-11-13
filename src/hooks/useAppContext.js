@@ -1,4 +1,4 @@
 import { useContext } from "react";
-import { NavContext } from "../context/AppContext";
+import { AppContext } from "../context/AppContext";
 
-export const useAppContext = () => useContext(NavContext);
+export const useAppContext = () => useContext(AppContext);

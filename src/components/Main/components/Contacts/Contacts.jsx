@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
-import Button from '../../../shared/Button/Button';
 import PageBackground from '../../../../assets/img/PageBackground';
 import ContactsList from './ContactsList/ContactsList';
+import DownloadCVButton from './DownloadCVButton/DownloadCVButton';
 
 const Contacts = () => {
   return (
@@ -11,7 +11,7 @@ const Contacts = () => {
       <div className='container'>
         <div className={styles.contacts__inner}>
           <ContactsList />
-          <Button name='Download _CV' styles={styles.contacts__button} />
+          <DownloadCVButton styles={styles.contacts__button} />
         </div>
       </div>
     </section>

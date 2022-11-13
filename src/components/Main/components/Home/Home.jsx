@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import PageBackground from '../../../../assets/img/PageBackground';
 import { useAppContext } from '../../../../hooks/useAppContext';
-import Button from '../../../shared/Button/Button';
+import PortfolioButton from './PortfolioButton/PortfolioButton';
 import styles from './Home.module.scss';
 
 const Home = () => {
@@ -26,9 +25,7 @@ const Home = () => {
               ))}
             </div>
 
-            <NavLink to='/works' tabIndex={-1}>
-              <Button name='Portfolio' styles={styles.home__button} />
-            </NavLink>
+            <PortfolioButton />
           </div>
         </div>
       </div>

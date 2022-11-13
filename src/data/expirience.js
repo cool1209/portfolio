@@ -2,7 +2,7 @@ const expirience = [
   {
     position: "Frontend Developer",
     company: "Self employed",
-    date: "Apr 2021 - Present",
+    date: "Apr 2022 - Present",
     responsibilities: [
       "Development of interfaces for web applications"
     ],

@@ -1,7 +1,8 @@
-@import '../../../styles/utils/vars';
-@import '../../../styles/utils/mixins';
+@import '../../../../styles/utils/vars';
+@import '../../../../styles/utils/mixins';
 
 .link {
+  position: relative;
   padding: 15px 0;
 
   text-transform: uppercase;
@@ -11,6 +12,11 @@
   outline: none;
 
   transition: color $transition-behavior;
+
+  @include smallTablet {
+    width: 100%;
+    text-align: center;
+  }
 
   @include phone {
     padding: 10px 0;

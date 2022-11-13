@@ -70,13 +70,4 @@
       font-size: $font-size-main;
     }
   }
-
-  &__button {
-    width: 300px;
-    margin: 0 auto;
-
-    @include phone {
-      width: 100%;
-    }
-  }
 }

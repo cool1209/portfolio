@@ -6,7 +6,7 @@ import skills from '../data/skills';
 import education from '../data/education';
 import contacts from '../data/contacts';
 
-export const NavContext = React.createContext({
+export const AppContext = React.createContext({
   greeting: {},
   works: [],
   expirience: [],
@@ -34,8 +34,8 @@ export const AppProvider = ({ children }) => {
   }
 
   return (
-    <NavContext.Provider value={contextValue}>
+    <AppContext.Provider value={contextValue}>
       {children}
-    </NavContext.Provider>
+    </AppContext.Provider>
   );
 };

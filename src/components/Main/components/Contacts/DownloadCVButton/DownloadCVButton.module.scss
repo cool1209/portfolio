@@ -1,0 +1,11 @@
+@import '../../../../../styles/utils/vars';
+@import '../../../../../styles/utils/mixins';
+
+.button {
+  @include button;
+
+  height: 60px;
+  margin-top: 60px;
+
+  font-size: $font-size-main;
+}
