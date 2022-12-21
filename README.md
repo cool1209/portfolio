@@ -14,17 +14,17 @@ I'm a frontend developer with a desire to learn new and improve. Currently, I'm 
 for a react developer position and new challenging projects to develop myself even
 more. I have profound knowledge of HTML and CSS including preprocessors (Sass/Less),
 a good understanding of responsive web design, and proficiency in working with native
-JavaScript (Typescript) & Frameworks (React, Redux, MobX, NextJS). Also, I'm ready to
+JavaScript (Typescript) & Frameworks (React, Redux, MobX, Next). Also, I'm ready to
 learn new technologies.
 
 ### Skills
 >- Typescript, JavaScript (ES2015 - 2019) 
 >- React, Redux, MobX, Next.js
 >- HTML, CSS, Sass (SCSS), BEM
->- TailwindCSS, Bootstrap, Bulma
+>- Material UI, TailwindCSS, Bootstrap, Bulma
 >- Fetch, REST API, SQL
 >- Git/Github, NPM, Parcel, Gulp, Webpack
->- Algorithms: Solved 29 katas on CodeWars
+>- Algorithms: Solved 34 katas on CodeWars
 >- Basic OOP understanding
 >- VS Code, WebStorm, Photoshop, Figma, Avocode
 >- Chrome Developer Tools (incl. React), Trello, Jira
