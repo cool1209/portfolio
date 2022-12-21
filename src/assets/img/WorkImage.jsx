@@ -1,6 +1,7 @@
 import React from 'react';
 import ImgStyles from './Img.module.scss';
-import KeepInTouch from './works/kit.png';
+import keepInTouch from './works/kit.png';
+import obliksoft from './works/obliksoft.png';
 import friendsApp from './works/friends_app.png';
 import memoryPairGame from './works/memory_game.png';
 import creativeBackery from './works/creative_bakery.png';
@@ -17,7 +18,17 @@ const WorkImage = ({ id }) => {
 
     return (
       <img
-        src={KeepInTouch}
+        src={keepInTouch}
+        alt={id}
+        className={ImgStyles.work}
+      />
+    );
+
+    case 'OblikSoft testing':
+
+    return (
+      <img
+        src={obliksoft}
         alt={id}
         className={ImgStyles.work}
       />
