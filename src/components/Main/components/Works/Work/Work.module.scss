@@ -1,5 +1,5 @@
-@import '../../../../../styles/utils/vars';
-@import '../../../../../styles/utils/mixins';
+@import "../../../../../styles/utils/vars";
+@import "../../../../../styles/utils/mixins";
 
 .work {
   position: relative;
@@ -7,7 +7,7 @@
   &:hover {
     box-shadow: 0 0 8px 4px $color-blue;
   }
-  
+
   &__description {
     position: absolute;
     top: 0;
@@ -15,17 +15,17 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
     padding: 15px;
     font-size: $font-size-main;
     line-height: 1.6;
     text-shadow: $shadow-dark;
     color: $color-secondary;
-  
+
     background: transparent;
 
     opacity: 0;
@@ -33,7 +33,7 @@
 
     @include phone {
       font-size: $font-size-very-small;
-    };
+    }
   }
 
   &:hover &__description {
@@ -44,40 +44,39 @@
   &__descriptionItemTitle {
     color: $color-blue;
   }
-  
+
   &__image {
     position: relative;
   }
-  
+
   &__github {
     position: absolute;
     bottom: 15px;
     right: 15px;
     z-index: 2;
-  
+
     border-radius: 50%;
     transition: all $transition-behavior;
   }
-  
+
   &__github:focus {
     outline: none;
   }
-  
+
   &__githubIcon {
     display: block;
-  
+
     font-size: 50px;
     color: transparent;
   }
-  
+
   &:hover &__githubIcon {
     color: $color-secondary;
   }
-  
+
   &__github:hover {
     transform: scale(1.1);
     background: $color-black;
     box-shadow: $shadow-dark;
   }
 }
-
