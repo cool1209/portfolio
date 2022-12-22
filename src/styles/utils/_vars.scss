@@ -25,16 +25,17 @@ $font-family-main: 'Open Sans', sans-serif;
 $font-family-logo: 'Fredericka the Great', cursive;
 $font-family-signature: 'Pacifico', cursive;
 
-$font-size-main: 18px;
-$font-size-large: 22px;
-$font-size-small: 16px;
-$font-size-mini: 14px;
-$font-size-very-small: 12px;
+$font-size-main: 16px;
+$font-size-large: 18px;
+$font-size-small: 14px;
+$font-size-mini: 12px;
 
 $transition-behavior: 0.1s linear;
 
-$height-header-main: 70px;
+$height-header-desctop: 60px;
+$height-header-tablet: 60px;
 $height-header-phone: 50px;
 
-$page-padding-top-main: $height-header-main + 40px;
-$page-padding-top-phone: $height-header-phone + 20px;
+$page-padding-top-desktop: $height-header-desctop + 30px;
+$page-padding-top-tablet: $height-header-tablet + 20px;
+$page-padding-top-phone: $height-header-phone + 15px;

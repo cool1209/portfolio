@@ -1,0 +1,7 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.button {
+  height: 44px;
+  @include button;
+}

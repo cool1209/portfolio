@@ -1,0 +1,78 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  display: none;
+  justify-content: end;
+  align-items: center;
+
+  height: $height-header-desctop;
+  padding-right: 30px;
+
+  background: $color-header-bg;
+  box-shadow: $shadow-dark;
+
+  @include smallTablet {
+    display: flex;
+  }
+
+  @include phone {
+    height: $height-header-phone;
+    padding-right: 15px;
+  }
+}
+
+.burgerButton {
+  position: relative;
+
+  width: 35px;
+  height: 35px;
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  @include smallTablet {
+    display: block;
+  }
+
+  &__item {
+    @include burgerItem;
+  }
+
+  &__item:before,
+  &__item:after {
+    content: '';
+    @include burgerItem;
+  }
+
+  &__item:before {
+    position: absolute;
+    top: 15%;
+    left: 0;
+  }
+
+  &__item:after {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+  }
+
+  &_active &__item {
+    transform: rotate(45deg);
+  }
+
+  &_active &__item::before {
+    transform: rotate(90deg);
+  }
+
+  &_active &__item::after {
+    display: none;
+  }
+}

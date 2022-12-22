@@ -1,0 +1,6 @@
+@import '../../styles/utils/vars';
+
+.layout {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}

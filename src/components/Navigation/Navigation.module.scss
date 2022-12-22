@@ -1,0 +1,39 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  height: 100%;
+
+  @include tablet {
+    gap: 25px;
+
+    font-size: $font-size-small;
+  }
+
+  @include smallTablet {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    gap: 15px;
+
+    padding-top: $page-padding-top-phone;
+
+    background: $color-light;
+    
+    transition: top $transition-behavior;
+  }
+
+  &_active {
+    top: 0;
+  }
+}
+
+

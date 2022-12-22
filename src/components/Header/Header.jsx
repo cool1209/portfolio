@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from './Logo/Logo';
 import styles from './Header.module.scss';
-import Navigation from './Navigation/Navigation';
-import BurgerMenu from './BurgerMenu/BurgerMenu';
+import Logo from '../Logo/Logo';
+import Navigation from '../Navigation/Navigation';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = () => {  
   return (

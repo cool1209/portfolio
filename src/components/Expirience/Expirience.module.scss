@@ -1,0 +1,35 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.expirienceItem {
+  font-size: $font-size-small;
+  line-height: 1.25;
+
+  &__element {
+    margin-bottom: 12px;
+  }
+
+  &__elementName {
+    font-size: $font-size-small;
+    color: $color-yellow;
+  }
+
+  &__elementInfo {
+    font-style: italic;
+    color: $color-grey;
+  }
+
+  &__technologies {
+    margin-top: 8px;
+    padding-left: 16px;
+  }
+
+  &__responsibilities {
+    list-style: disc;
+    padding-left: 32px;
+  }
+
+  &__responsibility {
+    margin-top: 8px;
+  }
+}

@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
 
-  height: $height-header-main;
+  height: $height-header-desctop;
 
   @include phone {
     height: $height-header-phone;

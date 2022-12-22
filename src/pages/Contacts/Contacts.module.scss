@@ -1,0 +1,44 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+
+.contacts {
+  height: 100%;
+
+  @include pagePadding;
+
+  @include phone {
+    background: $color-page-bg-transparent-blue;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @include phone {
+      max-width: 300px;
+      padding: 0;
+      background: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    max-width: 460px;
+    padding: 40px 40px 50px;
+
+    background: $color-page-bg-transparent-blue;
+
+    & > li:last-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  &__download {
+    margin-top: 50px;
+  }
+}

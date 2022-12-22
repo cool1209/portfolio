@@ -1,0 +1,104 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+
+.about {
+  height: 100%;
+
+  @include pagePadding;
+
+  @include phone {
+    background: $color-page-bg-transparent-blue;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "expirience skills education";
+    gap: 30px;
+
+    height: 100%;
+
+    color: $color-grey;
+    text-shadow: $shadow-dark;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "expirience skills"
+        "expirience education";
+
+      gap: 20px;
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "expirience"
+        "skills"
+        "education";
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    padding: 30px;
+    background: $color-page-bg-transparent-blue;
+
+    @include tablet {
+      padding: 20px;
+      height: max-content;
+
+      &:first-of-type {
+        height: auto;
+      }
+    }
+
+    @include phone {
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    font-size: $font-size-large;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: $color-blue;
+
+    @include phone {
+      margin-bottom: 20px;
+      font-size: $font-size-main;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__listItem {
+    padding-bottom: 16px;
+    border-bottom: 1px dashed $color-blue;
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.expirience {
+  grid-area: expirience;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.education {
+  grid-area: education;
+}

@@ -1,0 +1,19 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+
+.contact {
+    
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: $color-secondary;
+
+    @include phone {
+      font-size: $font-size-small;
+    }
+  }
+}

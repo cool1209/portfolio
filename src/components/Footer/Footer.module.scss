@@ -7,7 +7,7 @@
   align-items: center;
   gap: 10px;
 
-  padding: 20px 0;
+  padding: 15px 0;
 
   color: $color-secondary;
 
@@ -15,7 +15,7 @@
 
   &__copyText,
   &__copyAuthor {
-    font-size: $font-size-mini;
+    font-size: $font-size-small;
   }
 
   &__copyAuthor {

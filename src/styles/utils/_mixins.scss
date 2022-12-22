@@ -52,10 +52,14 @@
 }
 
 @mixin pagePadding {
-  padding: $page-padding-top-main 0 40px;
+  padding: $page-padding-top-desktop 0 30px;
+
+  @include tablet {
+    padding: $page-padding-top-tablet 0 20px;
+  }
 
   @include phone {
-    padding: $page-padding-top-phone 0;
+    padding: $page-padding-top-phone 0 15px;
   }
 }
 
