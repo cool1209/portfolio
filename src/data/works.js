@@ -70,7 +70,3 @@ const works = [
 ];
 
 export default works;
-
-// Responsive 1190 x 729 75%
-// No throttling
-// (settings in google chrom for cutting images)

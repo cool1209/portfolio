@@ -1,3 +1,4 @@
+// The pictures size for the portfolio works is 800x490
 import React from 'react';
 import ImgStyles from './Img.module.scss';
 import keepInTouch from './works/kit.png';
