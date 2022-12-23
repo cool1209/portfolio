@@ -16,4 +16,10 @@
       font-size: $font-size-small;
     }
   }
+  
+  &__link {
+    height: 44px;
+    @include button;
+  }
 }
+

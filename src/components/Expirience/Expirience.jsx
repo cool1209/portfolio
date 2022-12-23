@@ -3,62 +3,62 @@ import styles from './Expirience.module.scss';
 
 const Expirience = ({ expirienceItem }) => {
   return (
-    <div className={styles.expirienceItem}>
-      <div className={styles.expirienceItem__element}>
-        <span className={styles.expirienceItem__elementName}>
+    <div className={styles.expirience}>
+      <div className={styles.expirience__element}>
+        <span className={styles.expirience__elementName}>
           Position
         </span>
         {': '}
-        <span className={styles.expirienceItem__elementInfo}>
+        <span className={styles.expirience__elementInfo}>
           {expirienceItem.position}
         </span>
       </div>
 
-      <div className={styles.expirienceItem__element}>
-        <span className={styles.expirienceItem__elementName}>
+      <div className={styles.expirience__element}>
+        <span className={styles.expirience__elementName}>
           Company
         </span>{': '}
 
-        <span className={styles.expirienceItem__elementInfo}>
+        <span className={styles.expirience__elementInfo}>
           {expirienceItem.company}
         </span>
       </div>
 
-      <div className={styles.expirienceItem__element}>
-        <span className={styles.expirienceItem__elementName}>
+      <div className={styles.expirience__element}>
+        <span className={styles.expirience__elementName}>
           Date
         </span>{': '}
 
-        <span className={styles.expirienceItem__elementInfo}>
+        <span className={styles.expirience__elementInfo}>
           {expirienceItem.date}
         </span>
       </div>
 
       {expirienceItem.technologies &&
-        <div className={styles.expirienceItem__element}>
-          <span className={styles.expirienceItem__elementName}>
+        <div className={styles.expirience__element}>
+          <span className={styles.expirience__elementName}>
             Technologies
           </span>{': '}
 
           <div className={
-            `${styles.expirienceItem__elementInfo} ${styles.expirienceItem__technologies}`
+            `${styles.expirience__elementInfo} ${styles.expirience__technologies}`
           }>
             {expirienceItem.technologies}
           </div>
         </div>
       }
 
-      <div className={styles.expirienceItem__element}>
-        <span className={styles.expirienceItem__elementName}>
+      <div className={styles.expirience__element}>
+        <span className={styles.expirience__elementName}>
           Responsibilities
         </span>{': '} 
         
-        <ul className={styles.expirienceItem__responsibilities}>
+        <ul className={styles.expirience__responsibilities}>
           {expirienceItem.responsibilities.map(responsibility => (
             <li
               key={responsibility}
               className={
-                `${styles.expirienceItem__elementInfo} ${styles.expirienceItem__responsibility}`
+                `${styles.expirience__elementInfo} ${styles.expirience__responsibility}`
               }
             >
               {responsibility}

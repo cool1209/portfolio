@@ -15,18 +15,12 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-
-    @include phone {
-      max-width: 300px;
-      padding: 0;
-      background: none;
-    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 
     max-width: 460px;
     padding: 40px 40px 50px;
@@ -36,9 +30,17 @@
     & > li:last-of-type {
       margin-top: 20px;
     }
+
+    @include phone {
+      width: 100%;
+      padding: 15px 10px;
+      background: none;
+    }
   }
 
-  &__download {
-    margin-top: 50px;
+  &__downloadButton {
+    height: 50px;
+    @include button;
+    font-size: $font-size-main;
   }
 }

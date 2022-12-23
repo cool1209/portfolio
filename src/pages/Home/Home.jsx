@@ -1,8 +1,8 @@
 import React from "react";
 import PageBackground from "../../assets/img/PageBackground";
 import { useAppContext } from "../../hooks/useAppContext";
-import PortfolioButton from "../../components/PortfolioButton/PortfolioButton";
 import styles from "./Home.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const { greeting } = useAppContext();
@@ -21,8 +21,14 @@ const Home = () => {
               ))}
             </div>
 
-            <div className={styles.home__button}>
-              <PortfolioButton />
+            <div className={styles.home__buttonContainer}>
+              <NavLink
+                to="/works"
+                tabIndex={-1}
+                className={styles.home__button}
+              >
+                Portfolio
+              </NavLink>
             </div>
           </div>
         </div>

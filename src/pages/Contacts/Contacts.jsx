@@ -3,7 +3,7 @@ import styles from "./Contacts.module.scss";
 import { useAppContext } from "../../hooks/useAppContext";
 import PageBackground from "../../assets/img/PageBackground";
 import Contact from "../../components/Contact/Contact";
-import DownloadCVButton from "../../components/DownloadCVButton/DownloadCVButton";
+import CVFile from "../../download/CV_Ihor_Kuchin.pdf";
 
 const Contacts = () => {
   const { contacts } = useAppContext();
@@ -21,7 +21,13 @@ const Contacts = () => {
             ))}
 
             <li>
-              <DownloadCVButton />
+              <a
+                href={CVFile}
+                className={styles.contacts__downloadButton}
+                download="CV_Ihor_Kuchin"
+              >
+                Download _CV
+              </a>
             </li>
           </ul>
         </div>

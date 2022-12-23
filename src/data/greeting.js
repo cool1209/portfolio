@@ -7,7 +7,7 @@ const greeting = {
     },
     {
       id: 2,
-      text: "I have profound knowledge of HTML and CSS including preprocessors (Sass/Less), a good understanding of responsive web design, and proficiency in working with native JavaScript (Typescript) & Frameworks (React, Redux, MobX, NextJS). Also, I'm ready to learn new technologies."
+      text: "I have profound knowledge of HTML and CSS including preprocessors (Sass/Less), a good understanding of responsive web design, and proficiency in working with native JavaScript (Typescript) & Frameworks (React, Redux, MobX). Also, I'm ready to learn new technologies."
     }
   ]
 }

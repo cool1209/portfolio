@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
-import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import BurgerMenuButton from '../BurgerMenuButton/BurgerMenuButton';
 
 const Header = () => {  
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         <div className={styles.header__inner}>
           <Logo />
           <Navigation />
-          <BurgerMenu />
+          <BurgerMenuButton />
         </div>
       </div>
     </header>
